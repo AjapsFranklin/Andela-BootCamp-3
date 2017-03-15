@@ -45,9 +45,11 @@ Array.prototype.search = function(theNumber){
 
     mySqR = Math.sqrt(this.myArray.length)
     this.length=this.myArray.length
-    var L=0
-    var R = this.myArray.length-1
+    var L=1
+    var R = this.myArray.length-2
     var m=0;
+
+
 
     if(theNumber%2!=0 & this.containsOdd==false){
         this.count = 0; this.index=-1
@@ -69,7 +71,6 @@ Array.prototype.search = function(theNumber){
      else
     while(!(L > R)){
         var m = Math.floor((L+R)/2)
-
 if (this.myArray[m] < theNumber){
             L =m+1
         }
