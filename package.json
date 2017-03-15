@@ -1,0 +1,22 @@
+{
+  "name": "andela-bootcamp-3",
+  "version": "1.0.0",
+  "description": "Andela Day 3",
+  "main": "library.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/framky007/Andela-BootCamp-3.git"
+  },
+  "author": "Ajaps Franklin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/framky007/Andela-BootCamp-3/issues"
+  },
+  "homepage": "https://github.com/framky007/Andela-BootCamp-3#readme"
+}
