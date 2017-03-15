@@ -89,3 +89,49 @@ if (this.myArray[m] < theNumber){
         return {"count":this.count, "index":this.index, "length":this.length}
      
 }
+
+
+
+function findMissing(arr1, arr2){
+    myObject = Object.prototype.toString.call(arr1).split(" ")[1];
+    myObject1 = Object.prototype.toString.call(arr2).split(" ")[1];
+
+
+    if(myObject != "Array]")
+        return "invalid input"
+
+    if(myObject1 != "Array]")
+        return "invalid input"
+
+    arr1.sort(function (a,b){return a-b})
+    arr2.sort(function (a,b){return a-b})
+
+    if(arr1.length==[] & arr2.length == [])
+        return 0
+    if(arr1.length > arr2.length){
+        for(i=0; i<arr2.length; i++)
+                if(arr1[i] != arr2[i])
+                    return arr1[i]
+                return arr1[arr1.length-1]
+            }
+
+        else if(arr1.length < arr2.length){            
+            for(i=0; i<=arr1.length; i++)
+                if(arr2[i] != arr1[i])
+                    return arr2[i]
+                return arr2[arr2.length-1]
+                    
+        }
+        else if (arr1.length == arr2.length)
+            return 0
+
+        else return 0
+}
+
+module.exports = {
+    findMissing: findMissing,
+    Array: Array,
+    toTwenty: toTwenty,
+    toForty: toForty,
+    toOneThousand: toOneThousand
+}
